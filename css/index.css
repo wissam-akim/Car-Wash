@@ -1,16 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap');
+:root {
+    font-family: 'Ubuntu', sans-serif;
+}
+body {
+    background-color: #f7f7f7;
+}
 .logo {
-    display: blue;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 2em;
     font-weight: bold;
-    font-color: blue;
+    color: blue;
+}
+.menu a {
+    display: block;
+    text-decoration: none;
+    text-align: auto;
+    color: black;
+    border: 1px solid transparent;
+    padding: 8px; 
+}
+.menu a:hover {
+    font-weight: bold;
+    color: #edc02d; 
 }
 .banner img {
-    max-width: 1100px;
+    max-width: 400px;
     display: block;
     margin: auto;
+    opacity: 0.5;
 }
 
 .banner h1, p {
     text-align: center;
 }
+article h3 {
+    color: blue; 
+}
+.services-card {
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
 
+.services-list img {
+    max-width: 400px;
+}
+main {
+    text-align: center;
+}
+.gift-list {
+    text-align: left;
+}
+#pricing {
+    font-size: 40px; 
+}
+article h4 {
+    color: blue;
+}
+.pricing-card {
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.2);
+}
+.offer-list {
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.2);
+}
