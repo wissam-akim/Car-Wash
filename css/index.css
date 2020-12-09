@@ -1,0 +1,16 @@
+.logo {
+    display: blue;
+    font-size: 2em;
+    font-weight: bold;
+    font-color: blue;
+}
+.banner img {
+    max-width: 1100px;
+    display: block;
+    margin: auto;
+}
+
+.banner h1, p {
+    text-align: center;
+}
+
