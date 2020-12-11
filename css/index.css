@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap');
+ 
 :root {
     font-family: 'Ubuntu', sans-serif;
+    --main-color: black;
 }
+
 body {
-    background-color: #f7f7f7;
+    max-width: 980px;
+    margin: auto;
+    text-align: center;
 }
 .logo {
     font-family: 'Ubuntu', sans-serif;
@@ -15,7 +20,7 @@ body {
     display: block;
     text-decoration: none;
     text-align: auto;
-    color: black;
+    color: var(--main-color);
     border: 1px solid transparent;
     padding: 8px; 
 }
@@ -23,27 +28,139 @@ body {
     font-weight: bold;
     color: #edc02d; 
 }
-.banner img {
-    max-width: 400px;
-    display: block;
-    margin: auto;
-    opacity: 0.5;
+@media (min-width: 600px) {
+    header nav {
+        display: flex;
+    }
+    header nav .menu {
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    footer nav {
+        display: flex;
+    }
+    footer nav .menu {
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .services-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 20px;
+    }
+    .services-list img {
+        width: 250px;
+        height: auto;
+        margin: auto;
+    }
+    .button3 {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .pricing-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+    .offer-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    .club-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 20px;
+}
+.banner {
+    background-image: url(../img/iguazu-unvisible.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.banner h1, p {
+.banner {
     text-align: center;
+    color: white;
 }
+
+.button {
+    padding: 0.35em 1.2em;
+    border: 0.1em  #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 15px;
+    color: rgb(153, 0, 255);
+    text-align: center;
+    transition: color 0.7s;
+    background-color: yellow;
+}
+
+.button:hover {
+    color: #000000;
+    background-color:#FFFFFF;
+    cursor: pointer;
+}
+
+.button2 {
+    padding: 0.35em 1.2em;
+    border: 0.1em solid transparent;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 15px;
+    color: rgba(255, 230, 0, 0.712);
+    text-align: center;
+    transition: color 0.7s;
+    background-color: transparent;
+}
+
+.button2:hover {
+    color: #00ff9d;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+.button3 {
+    padding: 0.35em 1.2em;
+    border: 0.2em solid yellow;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 16px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    transition: color 0.7s;
+    background-color: transparent;
+}
+
+.button3:hover {
+    color: white;
+    background-color: #17c5ff;
+    cursor: pointer;
+}
+
+
 article h3 {
     color: blue; 
 }
 .services-card {
-    background-color: white;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    text-align: start;
+    
+    
 }
 
 .services-list img {
-    max-width: 400px;
+    width: 100%;
+    display: flex;
+    margin: auto;
 }
+
 main {
     text-align: center;
 }
@@ -58,9 +175,16 @@ article h4 {
 }
 .pricing-card {
     background-color: white;
+    border: 0.1em solid #FFFFFF;
+    border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.2);
 }
 .offer-list {
+    background-image: url(../img/nissan.jpeg)
     color: white; 
     background-color: rgba(0, 0, 0, 0.2);
+}
+.club-list {
+    text-align: center;
+    display: flex;
 }
