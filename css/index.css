@@ -16,10 +16,7 @@ body {
     font-weight: bold;
     color: blue;
 }
-/*header nav p {
-    display: flex;
-    align-self: end;
-}*/
+
 .menu a {
     display: block;
     text-decoration: none;
@@ -107,6 +104,33 @@ body {
     text-align: center;
     color: white;
 }
+.services-list {
+    margin: 6%;
+    text-size-adjust: auto;
+    
+}
+
+article h3 {
+    color: #00a6ff; 
+}
+.serve {
+    display: block;
+    color: #7c7b78;
+    text-align: center;
+}
+.services-card {
+    text-align: start;
+}
+.services-card p {
+    color: #6e6e6e;
+    text-decoration: none;
+    letter-spacing: 0;    
+}
+.services-list img {
+    width: 100%;
+    display: ;
+    margin: auto;
+}
 
 .price {
     background-color:#fafafae8;
@@ -167,18 +191,6 @@ body {
 }
 
 
-article h3 {
-    color: blue; 
-}
-.services-card {
-    text-align: start;
-}
-
-.services-list img {
-    width: 100%;
-    display: flex;
-    margin: auto;
-}
 
 main {
     text-align: center;
